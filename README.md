@@ -4,8 +4,10 @@ This is a little script designed to make your SSH session a little more enjoyabl
 
 ## Screenshot
 
+### Before
 ![Before](before.png "Before")
 
+### After
 ![After](after.png "After")
 
 ## Prerequisities

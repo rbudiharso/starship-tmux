@@ -4,11 +4,9 @@ This is a little script designed to make your SSH session a little more enjoyabl
 
 ## Screenshot
 
-Before
-<img src="before.png">
+![Before](before.png "Before")
 
-After
-<img src="after.png">
+![After](after.png "After")
 
 ## Prerequisities
 

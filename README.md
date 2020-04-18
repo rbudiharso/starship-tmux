@@ -18,5 +18,5 @@ This is a little script designed to make your SSH session a little more enjoyabl
 ## installation
 
 1. SSH to your destination host like usual
-2. Run `curl -fsSL https://bit.ly/3bfeeGJ | bash`
+2. Run `curl -fsSL https://bit.ly/34NFycL | bash`
 3. Run `source ~/.bashrc` or just disconnect and reconnect your SSH session

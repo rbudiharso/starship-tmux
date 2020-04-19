@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # requirements
-# - wget
+# - git
+# - curl
 
 # prepare directory
 mkdir -p ~/.local/bin
@@ -10,8 +11,7 @@ mkdir -p ~/.config
 if ! [ -x "$(command -v tmux)" ]; then
   # install tmux
   echo "tmux not found, installing..."
-  wget https://github.com/tmux/tmux/releases/download/3.0a/tmux-3.0a-x86_64.AppImage
-  mv tmux-3.0a-x86_64.AppImage tmux
+  curl -sL -o tmux https://github.com/tmux/tmux/releases/download/3.0a/tmux-3.0a-x86_64.AppImage
   chmod +x tmux
   mv tmux ~/.local/bin
 fi

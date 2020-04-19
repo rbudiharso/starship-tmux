@@ -15,7 +15,7 @@ This is a little script designed to make your SSH session a little more enjoyabl
  - git
  - curl
 
-## installation
+## Installation
 
 1. SSH to your destination host like usual
 2. Run `curl -fsSL https://bit.ly/34NFycL | bash`

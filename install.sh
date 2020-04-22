@@ -40,6 +40,7 @@ cat /tmp/bashrc >> ~/.bashrc
 cat > ~/.config/starship.toml <<END
 prompt_order = [
     "username",
+    "hostname",
     "directory",
     "package",
     "nix_shell",

@@ -38,27 +38,24 @@ cat /tmp/bashrc >> ~/.bashrc
 
 # starship config
 cat > ~/.config/starship.toml <<END
-prompt_order = [
-    "username",
-    "hostname",
-    "directory",
-    "package",
-    "nix_shell",
-    "memory_usage",
-    "aws",
-    "env_var",
-    "cmd_duration",
-    "line_break",
-    "jobs",
-    "time",
-    "character",
-]
+format = """
+$username\
+$hostname\
+$directory\
+$memory_usage\
+$env_var\
+$cmd_duration\
+$line_break\
+$jobs\
+$time\
+$character"""
 
 [hostname]
-prefix = "@ "
+ssh_symbol = "@"
 
 [character]
-symbol = "=>"
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
 END
 
 # tmux config
@@ -77,6 +74,8 @@ run -b '~/.tmux/plugins/tpm/tpm'
 set -g @nord_tmux_no_patched_font "1"
 set -g @nord_tmux_show_status_content "0"
 
+set -g base-index 1
+setw -g pane-base-index 1
 set -g status-style "bg=#4c566a,fg=#eceff4"
 set -g status-left "#[fg=#bf616a,bg=#ebcb8b,bold] #S "
 set -g status-right "#{prefix_highlight} #[bg=#a3be8c,fg=black,bold] #U #[bg=#ebcb8b,fg=#bf616a,bold] #h "

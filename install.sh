@@ -71,11 +71,18 @@ set -g @plugin "arcticicestudio/nord-tmux"
 
 run -b '~/.tmux/plugins/tpm/tpm'
 
+set -g @yank_selection_mouse 'clipboard'
+
 set -g @nord_tmux_no_patched_font "1"
 set -g @nord_tmux_show_status_content "0"
 
+set-window-option -g mode-keys vi
+set -g mouse on
 set -g base-index 1
 setw -g pane-base-index 1
+setw -g automatic-rename
+set -g renumber-windows
+
 set -g status-style "bg=#4c566a,fg=#eceff4"
 set -g status-left "#[fg=#bf616a,bg=#ebcb8b,bold] #S "
 set -g status-right "#{prefix_highlight} #[bg=#a3be8c,fg=black,bold] #U #[bg=#ebcb8b,fg=#bf616a,bold] #h "
